@@ -5,7 +5,7 @@
 
 [![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B%20(API%26%2B)-success.svg)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Language-Kotlin-purple.svg)](https://kotlinlang.org)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
 *Route all media, Instagram Reels, TikTok, YouTube, and WhatsApp voice notes through your phone's earpiece—built specifically for devices with a broken main speaker.*
 
@@ -63,4 +63,4 @@
 
 ## 📄 License
 
-This project is licensed under the terms of the [MIT License](LICENSE).
+This project is licensed under the terms of the [GNU General Public License v3.0](LICENSE).
