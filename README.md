@@ -1,29 +1,66 @@
-# Apex Route
+<div align="center">
 
-Android audio-route controller starter project.
+# 🎧 Apex Route
+### System Audio Routing Engine for Android
 
-- Application ID: `com.apexroute.audio`
-- App label: `Apex Route`
-- Minimum Android: 8.0 / API 26
-- Kotlin, native Android views, AudioManager foreground service
+[![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B%20(API%26%2B)-success.svg)](https://developer.android.com)
+[![Kotlin](https://img.shields.io/badge/Language-Kotlin-purple.svg)](https://kotlinlang.org)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-## Build
+*Route all media, Instagram Reels, TikTok, YouTube, and WhatsApp voice notes through your phone's earpiece—built specifically for devices with a broken main speaker.*
 
-1. Open this folder in Android Studio.
-2. Use JDK 17.
-3. Allow Gradle sync to finish.
-4. Build > Build Bundle(s) / APK(s) > Build APK(s).
+</div>
 
-The configured APK output name is `Apex Route-1.0.apk`.
+---
 
-## Important routing limitations
+## ✨ Features
 
-This app requests communication-mode routing using Android AudioManager. It does not have root access or privileged audio-policy permissions. On Android 8–11 it uses the legacy speakerphone routing switch. On Android 12+ it first tries `setCommunicationDevice()` and falls back to the legacy switch if the OEM does not expose the built-in route.
+- **Global Earpiece Audio Routing**: Routes system audio, media streams, and voice notes directly through the phone's built-in earpiece receiver.
+- **Active Keep-Alive Audio Engine**: Employs a background foreground service with a continuous communication audio track to lock the Android Audio Policy (`AudioFlinger` / HAL) into communication mode.
+- **Proximity Sensor Assistant**: Automatically reinforces earpiece routing when holding the phone to your ear (essential for WhatsApp voice notes and ear-held playback).
+- **In-App Earpiece Test Tone**: Built-in 440Hz test tone generator to verify earpiece functionality instantly.
+- **Hardware Diagnostics**: Real-time detection and verification of built-in earpiece, speaker, wired headsets, and Bluetooth devices.
+- **Online Update Checker**: Integrates directly with GitHub Releases to check for and notify users of newer versions.
+- **Modern UI & Typography**: Styled with **Space Grotesk** and **Inter** fonts in a sleek, professional dark theme.
 
-OEM audio policies differ. The app cannot guarantee that every third-party app's media stream will be rerouted on every device. A foreground service keeps the request active; it does not grant extra system privileges.
+---
 
-## Notes
+## 📱 Screenshots & UI
 
-- Notification permission is requested on Android 13+.
-- The service notification contains Speaker, Earpiece, and Stop actions.
-- This is a starter implementation and should be tested on target phones before release.
+| Dashboard & Controls | Hardware Diagnostics | Developer Card |
+| :---: | :---: | :---: |
+| *Clean dark card design with live routing state* | *Real-time hardware output detection* | *Developer profile & social links* |
+
+---
+
+## 🛠️ Technical Architecture
+
+- **`AudioRoutingManager`**: Manages audio mode (`MODE_IN_COMMUNICATION`), speakerphone suppression, communication devices (Android 12+ API 31+), and HAL `setParameters` audio driver routing.
+- **`AudioRouteService`**: Bound foreground service complying with Android 14+ (`FOREGROUND_SERVICE_TYPE_SPECIAL_USE`) featuring persistent notification quick actions.
+- **`EarpieceKeepAlivePlayer`**: Maintains active voice communication audio attributes (`USAGE_VOICE_COMMUNICATION`) to force media routing without root access.
+- **`ProximitySensorManager`**: Handles proximity sensor events to maintain earpiece state during ear-held playback.
+
+---
+
+## 👨‍💻 Developer
+
+**Mohsin Raza**
+- Software Engineer | Frontend Developer | Python Programmer | AI Enthusiast | Open-Source Developer
+- **GitHub**: [@mohsinapex](https://github.com/mohsinapex)
+- **Telegram**: [@mohsinapex](https://t.me/mohsinapex)
+- **LinkedIn**: [mohsinapex](https://linkedin.com/in/mohsinapex)
+
+---
+
+## 📥 Download & Installation
+
+1. Go to the [Releases](https://github.com/mohsinapex/Apex-Route/releases) page.
+2. Download the latest signed APK (`ApexRoute-1.0.apk`).
+3. Install the APK on your Android device (Android 8.0 or higher).
+4. Open Apex Route, select **Phone Earpiece**, and enjoy your audio!
+
+---
+
+## 📄 License
+
+This project is licensed under the terms of the [MIT License](LICENSE).

@@ -121,13 +121,13 @@ class MainActivity : Activity() {
 
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(28, 36, 28, 36)
+            setPadding(28, 36, 28, 48)
         }
 
         // App Title Header (Space Grotesk)
         val header = TextView(this).apply {
             text = "Apex Route"
-            textSize = 28f
+            textSize = 30f
             setTextColor(0xFFFFFFFF.toInt())
             typeface = if (spaceGrotesk != null) Typeface.create(spaceGrotesk, Typeface.BOLD) else Typeface.DEFAULT_BOLD
         }
@@ -146,7 +146,7 @@ class MainActivity : Activity() {
         // Live Status Card
         val statusCard = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(22, 20, 22, 20)
+            setPadding(24, 22, 24, 22)
             setBackgroundColor(0xFF14111F.toInt())
         }
 
@@ -160,7 +160,7 @@ class MainActivity : Activity() {
 
         statusMessageText = TextView(this).apply {
             text = "Select an audio route below to begin."
-            textSize = 13f
+            textSize = 13.5f
             setTextColor(0xFFBDB8C9.toInt())
             setPadding(0, 6, 0, 4)
             typeface = if (inter != null) inter else Typeface.DEFAULT
@@ -182,7 +182,7 @@ class MainActivity : Activity() {
             textSize = 15f
             setTextColor(0xFFFFFFFF.toInt())
             typeface = if (spaceGrotesk != null) Typeface.create(spaceGrotesk, Typeface.BOLD) else Typeface.DEFAULT_BOLD
-            setPadding(0, 26, 0, 10)
+            setPadding(0, 28, 0, 12)
         }
         root.addView(sectionTitle)
 
@@ -202,11 +202,12 @@ class MainActivity : Activity() {
             setBackgroundColor(0xFF2C2442.toInt())
             typeface = if (inter != null) Typeface.create(inter, Typeface.NORMAL) else Typeface.DEFAULT
             gravity = Gravity.CENTER
+            setPadding(24, 0, 24, 0)
             val params = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                108
+                112
             )
-            params.setMargins(0, 8, 0, 6)
+            params.setMargins(0, 8, 0, 8)
             layoutParams = params
             setOnClickListener { toggleTestAudio() }
         }
@@ -220,11 +221,12 @@ class MainActivity : Activity() {
             setBackgroundColor(0xFF421E24.toInt())
             typeface = if (inter != null) Typeface.create(inter, Typeface.NORMAL) else Typeface.DEFAULT
             gravity = Gravity.CENTER
+            setPadding(24, 0, 24, 0)
             val params = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                108
+                112
             )
-            params.setMargins(0, 8, 0, 20)
+            params.setMargins(0, 8, 0, 24)
             layoutParams = params
             setOnClickListener { stopAudioService() }
         }
@@ -236,13 +238,13 @@ class MainActivity : Activity() {
             textSize = 15f
             setTextColor(0xFFFFFFFF.toInt())
             typeface = if (spaceGrotesk != null) Typeface.create(spaceGrotesk, Typeface.BOLD) else Typeface.DEFAULT_BOLD
-            setPadding(0, 10, 0, 8)
+            setPadding(0, 4, 0, 10)
         }
         root.addView(hwCardTitle)
 
         val hwCard = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(20, 16, 20, 16)
+            setPadding(22, 18, 22, 18)
             setBackgroundColor(0xFF100E17.toInt())
         }
 
@@ -250,7 +252,7 @@ class MainActivity : Activity() {
             text = "Earpiece Hardware: Checking…"
             textSize = 13f
             setTextColor(0xFFBDB8C9.toInt())
-            setPadding(0, 2, 0, 2)
+            setPadding(0, 3, 0, 3)
             typeface = if (inter != null) inter else Typeface.DEFAULT
         }
         hwCard.addView(hwEarpieceStatus)
@@ -259,7 +261,7 @@ class MainActivity : Activity() {
             text = "Speaker Hardware: Checking…"
             textSize = 13f
             setTextColor(0xFFBDB8C9.toInt())
-            setPadding(0, 2, 0, 2)
+            setPadding(0, 3, 0, 3)
             typeface = if (inter != null) inter else Typeface.DEFAULT
         }
         hwCard.addView(hwSpeakerStatus)
@@ -268,7 +270,7 @@ class MainActivity : Activity() {
             text = "Headset / Bluetooth: None"
             textSize = 13f
             setTextColor(0xFFBDB8C9.toInt())
-            setPadding(0, 2, 0, 2)
+            setPadding(0, 3, 0, 3)
             typeface = if (inter != null) inter else Typeface.DEFAULT
         }
         hwCard.addView(hwHeadsetStatus)
@@ -289,13 +291,13 @@ class MainActivity : Activity() {
             textSize = 15f
             setTextColor(0xFFFFFFFF.toInt())
             typeface = if (spaceGrotesk != null) Typeface.create(spaceGrotesk, Typeface.BOLD) else Typeface.DEFAULT_BOLD
-            setPadding(0, 28, 0, 8)
+            setPadding(0, 28, 0, 10)
         }
         root.addView(devCardTitle)
 
         val devCard = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setPadding(20, 18, 20, 18)
+            setPadding(22, 20, 22, 20)
             setBackgroundColor(0xFF14111F.toInt())
         }
 
@@ -311,7 +313,7 @@ class MainActivity : Activity() {
             text = "Software Engineer | Frontend Developer | Python Programmer | AI Enthusiast | Open-Source Developer"
             textSize = 13f
             setTextColor(0xFFBDB8C9.toInt())
-            setPadding(0, 4, 0, 12)
+            setPadding(0, 4, 0, 14)
             typeface = if (inter != null) inter else Typeface.DEFAULT
         }
         devCard.addView(devBio)
@@ -332,9 +334,9 @@ class MainActivity : Activity() {
             GitHubUpdateChecker.openUrl(this@MainActivity, "https://linkedin.com/in/mohsinapex")
         }
 
-        socialLayout.addView(githubBtn, LinearLayout.LayoutParams(0, 100, 1f).apply { setMargins(0, 0, 4, 0) })
-        socialLayout.addView(telegramBtn, LinearLayout.LayoutParams(0, 100, 1f).apply { setMargins(4, 0, 4, 0) })
-        socialLayout.addView(linkedinBtn, LinearLayout.LayoutParams(0, 100, 1f).apply { setMargins(4, 0, 0, 0) })
+        socialLayout.addView(githubBtn, LinearLayout.LayoutParams(0, 108, 1f).apply { setMargins(0, 0, 6, 0) })
+        socialLayout.addView(telegramBtn, LinearLayout.LayoutParams(0, 108, 1f).apply { setMargins(6, 0, 6, 0) })
+        socialLayout.addView(linkedinBtn, LinearLayout.LayoutParams(0, 108, 1f).apply { setMargins(6, 0, 0, 0) })
         devCard.addView(socialLayout)
         root.addView(devCard)
 
@@ -347,11 +349,12 @@ class MainActivity : Activity() {
             setBackgroundColor(0xFF14111F.toInt())
             typeface = if (inter != null) Typeface.create(inter, Typeface.NORMAL) else Typeface.DEFAULT
             gravity = Gravity.CENTER
+            setPadding(24, 0, 24, 0)
             val params = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
-                100
+                112
             )
-            params.setMargins(0, 16, 0, 8)
+            params.setMargins(0, 20, 0, 8)
             layoutParams = params
             setOnClickListener { checkForUpdatesOnline() }
         }
@@ -384,7 +387,7 @@ class MainActivity : Activity() {
         return Button(this).apply {
             text = label
             isAllCaps = false
-            textSize = 11.5f
+            textSize = 12f
             setPadding(2, 0, 2, 0)
             setTextColor(0xFF9B68FF.toInt())
             setBackgroundColor(0xFF1F1B2E.toInt())
