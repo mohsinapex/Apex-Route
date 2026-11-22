@@ -28,7 +28,8 @@
 ## 📱 Screenshots & UI
 
 <div align="center">
-  <img src="Apex-Route%20SS.jpeg" alt="Apex Route UI Screenshot" width="320"/>
+  <img src="Apex-Route%20SS.jpeg" alt="Apex Route UI Screenshot" width="325"/>
+  <p><em>Apex Route Dashboard — Earpiece Routing & Hardware Diagnostics</em></p>
 </div>
 
 ---
