@@ -27,9 +27,9 @@
 
 ## 📱 Screenshots & UI
 
-| Dashboard & Controls | Hardware Diagnostics | Developer Card |
-| :---: | :---: | :---: |
-| *Clean dark card design with live routing state* | *Real-time hardware output detection* | *Developer profile & social links* |
+<div align="center">
+  <img src="Apex-Route%20SS.jpeg" alt="Apex Route UI Screenshot" width="320"/>
+</div>
 
 ---
 
