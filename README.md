@@ -3,13 +3,12 @@
 # 🎧 Apex Route
 ### System Audio Routing Engine for Android
 #### No Root Required
-#### No Special Permissions Required
 
 [![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B%20(API%26%2B)-success.svg)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Language-Kotlin-purple.svg)](https://kotlinlang.org)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 
-*Route all media, Instagram Reels, TikTok, YouTube, and WhatsApp voice notes through your phone's earpiece—built specifically for devices with a broken main speaker.*
+*Route all media, Instagram Reels, TikTok, YouTube, and WhatsApp voice notes through your phone's earpiece—built specifically for devices with a broken main speaker. No special permissions needed*
 
 </div>
 
@@ -58,7 +57,7 @@
 ## 📥 Download & Installation
 
 1. Go to the [Releases](https://github.com/mohsinapex/Apex-Route/releases) page.
-2. Download the latest signed APK (`ApexRoute-1.0.apk`).
+2. Download the latest APK (`ApexRoute-1.0.apk`).
 3. Install the APK on your Android device (Android 8.0 or higher).
 4. Open Apex Route, select **Phone Earpiece**, and enjoy your audio!
 
