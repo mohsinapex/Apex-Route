@@ -2,8 +2,8 @@
 
 # 🎧 Apex Route
 ### System Audio Routing Engine for Android
-## No Root Required
-## No Special Permissions Required
+#### No Root Required
+#### No Special Permissions Required
 
 [![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B%20(API%26%2B)-success.svg)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Language-Kotlin-purple.svg)](https://kotlinlang.org)
