@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Apex Route</string>
+    <string name="service_channel">Audio Routing Service</string>
+    <string name="title_apex_route">Apex Route</string>
+    <string name="subtitle_control">AUDIO OUTPUT CONTROL</string>
+    <string name="btn_earpiece">Phone Earpiece</string>
+    <string name="btn_speaker">Main Speaker</string>
+    <string name="btn_start_service">Start Audio Service</string>
+    <string name="btn_stop_service">Stop Service</string>
+    <string name="status_stopped">Service stopped</string>
+    <string name="disclaimer_note">Apex Route utilizes Android communication audio policy APIs to route sound output. While supported on most Android devices, specific OEM ROMs or media apps may restrict media streams from routing to the earpiece.</string>
+</resources>

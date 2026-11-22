@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_dark">#090810</color>
+    <color name="surface_dark">#181524</color>
+    <color name="surface_card">#201C30</color>
+    <color name="accent_purple">#9B68FF</color>
+    <color name="accent_purple_dark">#6E32E3</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#BDB8C9</color>
+    <color name="text_tertiary">#7E788F</color>
+    <color name="status_green">#4CAF50</color>
+    <color name="status_orange">#FF9800</color>
+    <color name="status_red">#EF5350</color>
+    <color name="status_gray">#787286</color>
+    <color name="button_bg">#2D2644</color>
+    <color name="button_selected">#6E32E3</color>
+</resources>

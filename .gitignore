@@ -1,0 +1,25 @@
+# Built application files
+*.apk
+*.apks
+*.aab
+
+# Gradle & Android Studio build directories
+.gradle/
+build/
+app/build/
+
+# Local configuration file (sdk path, etc.)
+local.properties
+
+# IDE & OS specific files
+.idea/
+.kotlin/
+.DS_Store
+Thumbs.db
+
+# Signing Keystores - CRITICAL SECURITY: Never commit release keystores to version control!
+apex-route-release
+*.jks
+*.keystore
+*.p12
+*.key
