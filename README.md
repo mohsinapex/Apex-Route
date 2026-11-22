@@ -7,7 +7,8 @@
 
 [![Android 8.0+](https://img.shields.io/badge/Android-8.0%2B%20(API%26%2B)-success.svg)](https://developer.android.com)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
-[![GitHub Release](https://shields.io)](https://github.com)
+
+
 *Route all media, Instagram Reels, TikTok, YouTube, and WhatsApp voice notes through your phone's earpiece—built specifically for devices with a broken main speaker. No special permissions needed*
 
 </div>
